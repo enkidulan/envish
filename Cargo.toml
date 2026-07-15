@@ -1,0 +1,22 @@
+[package]
+name = "envish"
+version = "0.1.0"
+edition = "2024"
+description = "Load named environment profiles into a nested shell"
+license = "MIT"
+repository = "https://github.com/enkidulan/envish"
+homepage = "https://github.com/enkidulan/envish"
+readme = "README.md"
+keywords = ["env", "environment", "cli", "profile", "toml"]
+categories = ["command-line-utilities", "config"]
+rust-version = "1.85"
+
+[dependencies]
+anyhow = "1.0.103"
+clap = { version = "4.6.1", features = ["derive"] }
+directories = "6.0.0"
+tempfile = "3.27.0"
+toml = "1.1.2"
+
+[dev-dependencies]
+tempfile = "3.27.0"
